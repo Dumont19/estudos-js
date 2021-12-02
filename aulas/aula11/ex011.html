@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de nacionalidade</title>
+    <style>
+        body {
+            background-color: #006400;
+            font: normal 20pt times;
+        }
+        h1 {
+            color: #ffd700;
+            font: normal 30pt times;
+        }
+        input#nacio {
+            color: gold 20pt times;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Verificação de brasileiros:
+    </h1>
+    Digite aqui seu país: <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="mostrar" onclick="mostra()">
+    <div id="res">
+
+    </div>
+</body>
+
+    <script>
+        function mostra () { 
+            var nacionalidade = window.document.getElementById('nacionalidade').value
+            if (nacionalidade == 'Brasil') {
+                res.innerHTML += '<p>Você é brasileiro.</p>'
+            } else {
+                res.innerHTML += '<p>Você é estrangeiro.</p>'
+            }
+    
+    }
+    </script>
+</html>
